@@ -1,5 +1,5 @@
 $.getJSON('https://ajar-target.gomix.me/stops', function(response) {
-    // console.log(response)
+    console.log(response)
 
     var keys = Object.keys(response)
 
@@ -8,7 +8,7 @@ $.getJSON('https://ajar-target.gomix.me/stops', function(response) {
 
         $(".container").append(
 
-            "<div class= col-md-3>" +
+            "<div class= col-md-4>" +
 
             "<div class='well'>" + response[keys[i]].stop_name + "<br>" + "</div>"
 
@@ -19,6 +19,6 @@ $.getJSON('https://ajar-target.gomix.me/stops', function(response) {
     }
 })
 
-$.getJSON('https://ajar-target.gomix.me/status', function(response){
-    console.log(response)
-})
+
+
+
